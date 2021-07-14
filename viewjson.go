@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter,r *http.Request){
 func main(){
 	// book := Book{Title: "Learning Concurreny in Python", Author: "Elliot Forbes",}
 	// fmt.Printf("%+v\n",book)
-	http.HandleFunc("/sajin",handler)
+	http.HandleFunc("/",handler)
 
 	log.Fatal(http.ListenAndServe(":8080",nil))
 }
